@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:usesCleartextTraffic="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.USPproject"
+        tools:targetApi="31">
+        <activity
+            android:name=".VerificationCodeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VerificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SelectedOptionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PolicyAcceptanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PhotosPermission"
+            android:exported="false" />
+        <activity
+            android:name=".PermissionsManagerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MultiSittings"
+            android:exported="false" />
+        <activity
+            android:name=".MicrophonePermission"
+            android:exported="false" />
+        <activity
+            android:name=".LogInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LocationPermission"
+            android:exported="false" />
+        <activity
+            android:name=".EditGeneralInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ContactsPermission"
+            android:exported="false" />
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CameraPermission"
+            android:exported="false" />
+        <activity
+            android:name=".CallLogPermission"
+            android:exported="false" />
+        <activity
+            android:name=".AccessibilityOptionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

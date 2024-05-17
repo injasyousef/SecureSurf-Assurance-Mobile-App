@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_background"
+    tools:context=".VerificationCodeActivity">
+
+    <EditText
+        android:id="@+id/editTextVerificationCode"
+        style="@style/StyleEditText"
+        android:drawableLeft="@drawable/password"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="211dp"
+        android:hint="Enter Verification Code"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSendEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="87dp"
+        android:onClick="buttonSendEmail"
+        android:text="if you not receive a code?\n Click here"
+        android:textSize="18dp"
+        android:background="@android:color/transparent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
+
+
+    <Button
+        android:id="@+id/buttonValidateCode"
+        android:layout_width="170dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="100dp"
+        android:onClick="buttonValidateCode"
+        android:text="Verify Code"
+        app:layout_constraintStart_toStartOf="@+id/editTextVerificationCode"
+        app:layout_constraintTop_toBottomOf="@+id/editTextVerificationCode" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

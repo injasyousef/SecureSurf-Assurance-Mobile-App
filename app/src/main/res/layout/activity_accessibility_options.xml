@@ -1,0 +1,150 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_background"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textTitle"
+        style="@style/TextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="48dp"
+        android:text="Accessibility Options"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxCamera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBoxCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="8dp"
+        android:text="Camera"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxLocation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle" />
+
+    <CheckBox
+        android:id="@+id/checkBoxLocation"
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Location"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxPhotoGallery"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxCamera"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxCamera" />
+
+    <CheckBox
+        android:id="@+id/checkBoxPhotoGallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/white"
+
+        android:text="Photo Gallery"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxActivityTracing"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxLocation"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxLocation" />
+
+    <CheckBox
+        android:id="@+id/checkBoxActivityTracing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/white"
+
+        android:text="Call Log Activity Tracing"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxMicrophone"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxPhotoGallery"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxPhotoGallery" />
+
+    <CheckBox
+        android:id="@+id/checkBoxMicrophone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+
+        android:layout_marginBottom="8dp"
+        android:text="Microphone"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxContacts"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxActivityTracing"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxActivityTracing" />
+
+    <CheckBox
+        android:id="@+id/checkBoxContacts"
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="Contacts"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxPermissionsManager"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxMicrophone"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxMicrophone" />
+
+    <CheckBox
+        android:id="@+id/checkBoxPermissionsManager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="62dp"
+        android:text="Permissions Manager"
+        android:textColor="@color/white"
+
+        app:layout_constraintBottom_toTopOf="@+id/buttonProtect"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxContacts"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxContacts" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="6dp"
+        android:onClick="Settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/myVectorImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Setting"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/settings" />
+
+        <TextView
+            android:id="@+id/myTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sittings"
+            android:onClick="Setting"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@id/myVectorImageButton"
+            app:layout_constraintTop_toTopOf="@id/myVectorImageButton"
+            app:layout_constraintBottom_toBottomOf="@id/myVectorImageButton" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <Button
+        android:id="@+id/buttonProtect"
+        style="@style/whitebtn"
+        android:layout_width="179dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="80dp"
+        android:text="Protect"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxPermissionsManager" />
+</androidx.constraintlayout.widget.ConstraintLayout>

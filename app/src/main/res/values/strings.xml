@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SECURESURF ASSURANCE APP</string>
+    <string name="content_approval">By using this application, you agree to our Privacy and Usage Policy as outlined below:\n\nYour privacy is important to us. It is SECURE ONE ASSURANCE COMPANY policy to respect your privacy regarding any information we may collect from you across our application, SECURESURF ASSURANCE APP, and other sites we own and operate.\n\n1. Information we collect\nWe collect information directly from you when you use our application. This may include:\n\n- Personal details you provide when you register for an account, such as your name, email address, and profile information.\n- Usage data and preferences that help us understand how you use the application and how we can tailor it to your needs.\n\n2. How we use your information\nWe use the information we collect to provide, maintain, and improve the application\'s functionalities. This includes using the data to:\n\n- Communicate with you, including sending you updates and user support.\n- Enhance your user experience.\n- Conduct analytics and performance monitoring.\n\n3. Your data protection rights\nYou have the right to access, update, or delete the information we have on you. You can do this at any time by contacting us through the application\'s support channels.\n\n4. Changes to the policy\nWe may update our Privacy and Usage Policy from time to time. We will notify you of any changes by posting the new policy on this page.\n\n If you have questions about our practices or any of your rights, you are welcome to contact us at secureone@gmail.co\n\nThis policy is effective as of 26/1/2024.\n\n You must agree to the Privacy and Usage Policy</string>
+    <string name="description">Sittings</string>
+
+    <string-array name="phone_features">
+        <item>Camera</item>
+        <item>Location</item>
+        <item>Photo Gallery</item>
+        <item>Other Feature</item>
+    </string-array>
+
+</resources>
